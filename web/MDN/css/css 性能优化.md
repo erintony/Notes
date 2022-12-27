@@ -12,7 +12,7 @@
 
 # Render Blocking 优化
 通过媒体查询引入分割后的css文件
-```
+```html
 <link rel="stylesheet" href="styles.css"> <!-- blocking -->
 <link rel="stylesheet" href="print.css" media="print"> <!-- not blocking --> 
 <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)"> 
@@ -27,7 +27,7 @@
 will-change属性告诉浏览器，元素的哪些属性将会改变，然后，浏览器就可以在元素改变之前做一些优化
 
 #  `font-display` 属性
-```
+```css
 @font-face {
   font-family: someFont;
   src: url(/path/to/fonts/someFont.woff) format('woff');

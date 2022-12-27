@@ -2,7 +2,7 @@
 Vue 提供了 [`defineAsyncComponent`](https://cn.vuejs.org/api/general.html#defineasynccomponent) 方法,  返回一个外层包装过的组件，仅在页面需要它渲染时才会调用加载内部实际组件的函数，实现异步加载组件
 ## defineAsyncComponent 支持两种使用方式
 1. 接收一个返回 Promise 的加载函数，该函数用于返回异步加载的组件
-```
+```js
 import { defineAsyncComponent } from 'vue'
 
 const AsyncComp = defineAsyncComponent(() => {
@@ -39,7 +39,7 @@ const AsyncComp = defineAsyncComponent({
 
 ## 如何做到异步加载？
 我们来看源码如何实现
-```
+```ts
 export function defineAsyncComponent<
   T extends Component = { new (): ComponentPublicInstance }
 >(source: AsyncComponentLoader<T> | AsyncComponentOptions<T>): T {

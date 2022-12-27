@@ -17,7 +17,7 @@ vue有提供一种缓存组件的解决方案 — keep-alive。
 # 方案V2
 使用History API。当页面查询条件改变时，将页面条件更新到当前历史状态。
 
-```
+```js
 // stateObj: 页面条件状态对象, title: 标题
 history.replaceState(stateObj, "title");
 ```

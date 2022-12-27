@@ -19,7 +19,7 @@ Vue的渲染过程：模版 -> 编译 -> 渲染函数 -> 虚拟Dom  -> 更新渲
 
 ## 创建自定义渲染器 reateRenderer()
 
-```
+```ts
 import { createRenderer } from '@vue/runtime-core'
 
 const { render, createApp } = createRenderer({
