@@ -19,7 +19,7 @@ const AsyncComp = defineAsyncComponent(() =>｛
 })
 ```
 2.  配置对象使用方式
-```
+```js
 const AsyncComp = defineAsyncComponent({
   // 加载函数, 同第一种的加载函数
   loader: () => import('./Foo.vue'),
